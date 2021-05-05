@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Zhu, Liang-Yu</title>
+</head>
+<body>
+    <div class="toggle" onclick="toggleMenu();"></div>
+
+    <section class="banner" id="home">
+        <div class="imgSidebar">
+            <img src="tmp1.jpg">
+        </div>
+        <div class="contentBx">
+            <h5 class="logoText">My_Portfolio</h5>
+            <div>
+                <h4><span>Hello</span>, I'm</h4>
+                <h2>Zhu, Liang-Yu</h2>
+                <p>
+                    I am a undergraduate student in <span>Finance</span> at the <span>Department of Management</span> , National Taiwan University, Taiwan (R.O.C.).
+                </p>
+                <a href="#"class="btn">About Me</a>
+            </div>
+            <ul class="sci">
+                <li><a href="https://www.facebook.com/tnoyzhu"><img src="facebook.png"></a></li>
+                <li><a href="#"><img src="twitter.png"></a></li>
+                <li><a href="https://www.instagram.com/"><img src="instagram.png"></a></li>
+             </ul>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="title white">
+            <h2>About Me</h2>
+            <p>“Never get so busy making a living that you forget to make a life.” —Dolly Parton</p>
+        </div>
+        <div class="content">
+            <div class="textBx">
+                <p>
+                    <br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;During my time in school, I have not only worked hard in studying, but also have attended several clubs and activities. Attending clubs and activities bring me many new aspects and transition in a student’s life, including a new level of independence, professional experience, personal development and organization and management skills. Also, I found other tasks in daily life easier to embark upon through joining clubs and activities that fit my own individual interests, needs, and goals. </p>
+            </div>        
+            <div class="imgBx">
+                <img src="tmp2.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="title">
+            <h2>Me Studying</h2>
+            <p>"There is no substitute for hard work."" – Thomas Edison</p>
+        </div>
+        <div class="content">
+
+            <div class="servicesBx">
+                <img src="icon2.png">
+                <h2>Option & Futures</h2>
+                <p>Derivatives are added to bond issues, used in executive compensation plans, embedded in capital investment opportunities, and so on. As a finance student, I have the knowledge about <span>how derivtives work, how they are used, and how they are priced.</span></p>
+            </div>
+            <div class="servicesBx">
+                <img src="icon1.png">
+                <h2>Actuarial knowledge</h2>
+                <p>My second studies in finace is the actuarial knowledge.Using <span>statistical techniques and mathematical skills</span> to assess the probability of an event and its financial consequences.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="work" id="work">
+        <div class="title">
+            <h2>Me Try Learning New Stuff</h2>
+            <p>“Life is like riding a bicycle. To keep your balance you must keep moving.” -Albert Einstein</p>
+        </div>    
+        <div class="content">
+            <div class="workBx">
+                <div class="imgBx">
+                    <img src="img4.jpg">
+                </div>
+                <div class="textBx">
+                    <h3><a href="https://www.facebook.com/tnoyzhu">Sass</a><br><br>Building a website by using <br>Sass to compile css</h3>
+                </div>
+            </div>
+            <div class="workBx">
+                <div class="imgBx">
+                    <img src="img1.jpg">
+                </div>
+                <div class="textBx">
+                    <h3><a href="https://www.facebook.com/tnoyzhu">Django</a><br><br>Using python to build and deploy website</h3>
+                </div>
+            </div>
+            <div class="workBx">
+                <div class="imgBx">
+                    <img src="img2.jpg">
+                </div>
+                <div class="textBx">
+                    <h3><a href="https://www.facebook.com/tnoyzhu">Bootstrap</a><br><br>Use Bootstrap to build <br>website fast</h3>
+                </div>
+            </div>
+
+        </div>    
+    </section>
+
+    <div class="sidebar">
+        <ul class="menu">
+            <li><a href="#home"onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about"onclick="toggleMenu();">About</a></li>
+            <li><a href="#services"onclick="toggleMenu();">Services</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <section class="contact" id="contact">
+        <div class="title white">
+            <h2>Contact</h2>
+        </div>
+        <div class="contactForm">
+            <div class="row">
+                <div class="col50">
+                    <input type="text" placeholder="First name">
+                </div>
+                <div class="col50">
+                    <input type="text" placeholder="Last name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col50">
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="col50">
+                    <input type="text" placeholder="Mobile No.">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col100">
+                    <textarea placeholder="Message"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col100">
+                    <input type="submit" value="send">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="copyright">
+        <p>Copyright 2021. All Right Reserved</p>
+    </div>
+
+    <script>
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.toggle');
+            const sidebar = document.querySelector('.sidebar');
+            menuToggle.classList.toggle('active');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
